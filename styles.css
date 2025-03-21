@@ -1,34 +1,84 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
-  color: #333;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
+/* Main Container */
 .container {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Heading */
 h1 {
-  color: #ff6b6b;
+    color: #ff6b6b;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+.image-container {
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
 }
 
 .dog-image {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  margin: 15px 0;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
+.dog-image:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styling */
 p {
-  font-size: 18px;
-  line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Quote Box */
+.quote-box {
+    background: #ffe4e1;
+    border-left: 5px solid #ff6b6b;
+    padding: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #e85050;
 }
